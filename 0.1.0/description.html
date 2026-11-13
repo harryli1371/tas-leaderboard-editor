@@ -1,0 +1,13 @@
+<h3>TAS Leaderboard + Editor</h3>
+<p>Adds a <b>Show TAS</b> button next to "Only verified" on the leaderboard screen. While it is on, the leaderboard and the run replays come from a
+community TAS leaderboard (<code>taslb.jadestone.dev</code>) instead of the official one. Click a row and Play to watch that run in the real game.</p>
+<p>Press <b>E</b> (rebindable under Controls &gt; TAS) on a custom track to open a TAS editor; press E again to run your edited inputs in the game as a ghost.
+The editor is loaded from <code>127.0.0.1:8780</code> in a sandboxed frame.</p>
+<h4>What it sends, and where</h4>
+<ul>
+<li>While Show TAS is on, leaderboard and recording requests (track id, paging) go to <code>taslb.jadestone.dev</code> instead of Kodub's servers. Nothing else is redirected.</li>
+<li>Submitting a run is <b>off by default</b> (Settings &gt; TAS). When on, it asks every time and shows the server, track, frames and name. It sends your nickname, country and car style
+and a separate random TAS token. Your PolyTrack account token is never read or sent, and TAS runs are never sent to Kodub's servers.</li>
+<li>Custom tracks only. Runs are verified by the leaderboard host.</li>
+</ul>
+<p>Unofficial community mod. Not affiliated with Kodub.</p>
