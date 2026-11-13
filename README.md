@@ -10,12 +10,19 @@ A PolyModLoader mod for PolyTrack 0.6.3 that adds:
 
 In PolyModLoader's **Mods** screen click **Add** and paste the import link, then **Load** and **Apply**:
 
-    https://cdn.polymodloader.com/<cb|gh>/<owner>/<repo>/<branch>/<folder containing manifest.json>
+    https://cdn.polymodloader.com/gh/harryli1371/tas-leaderboard-editor/main/
 
-(Replace the parts in angle brackets with where this folder is hosted. **This is the only official copy of the link; do not install copies from elsewhere.**)
+**This is the only official copy of the link; do not install copies from elsewhere.**
 
 ## What it contacts
 
 - The leaderboard server `taslb.jadestone.dev` (only the read-only `leaderboard` and `recordings` requests, only while Show TAS is on; `submit` only if you enable it).
 - The editor page `127.0.0.1:8780`, shown in a sandboxed frame.
 - Nothing else. TAS runs are never sent to the official PolyTrack servers; the mod refuses to if the server address ends in `kodub.com`.
+
+## For the maintainer
+
+- Do not rename or delete the account or repo this is hosted in: the install link contains their names, and a renamed or deleted name can be taken over by someone else.
+- Keep 2FA on, keep collaborators to a minimum, and only point `latest` in `manifest.json` at versions you have reviewed.
+- Regenerate with `python make_pml_mod.py --tas-base https://<leaderboard> --editor-base https://<editor host>`.
+- Add a LICENSE file of your choice before publishing.
