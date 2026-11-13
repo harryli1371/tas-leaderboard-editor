@@ -17,7 +17,7 @@ In PolyModLoader's **Mods** screen click **Add** and paste the import link, then
 ## What it contacts
 
 - The leaderboard server `taslb.jadestone.dev` (only the read-only `leaderboard` and `recordings` requests, only while Show TAS is on; `submit` only if you enable it).
-- The editor page `127.0.0.1:8780`, shown in a sandboxed frame.
+- The editor page `harryli1371.github.io`, shown in a sandboxed frame.
 - Nothing else. TAS runs are never sent to the official PolyTrack servers; the mod refuses to if the server address ends in `kodub.com`.
 
 ## For the maintainer

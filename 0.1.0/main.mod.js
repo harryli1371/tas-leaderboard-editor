@@ -1,7 +1,7 @@
 import { PolyMod, MixinType, SettingType } from "https://cdn.polymodloader.com/cb/PolyTrackMods/PolyModLoader/0.6.3/PolyTypes.js"; // path checked: resolves and exports PolyMod + MixinType (INSERT = 3)
 
 const TAS_BASE_DEFAULT = "https://taslb.jadestone.dev";       // leaderboard API (same paths as the official one: /v6/leaderboard, /v6/recordings)
-const TAS_EDITOR_DEFAULT = "http://127.0.0.1:8780"; // where the editor page (/editor) is served from
+const TAS_EDITOR_DEFAULT = "https://harryli1371.github.io/tas-editor"; // where the editor page (/editor) is served from
 
 let CFG = null;   // set once in INSTALL()
 
